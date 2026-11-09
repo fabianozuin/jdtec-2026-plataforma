@@ -1,0 +1,16 @@
+JDTEC 2026 — pacote integrado (baseado nos arquivos enviados)
+
+Conteúdo:
+- App.jsx: aplicação React atual preservada.
+- style.css, supabase.js, package.json e main.jsx: arquivos de execução fornecidos/confirmados.
+- institucional.html: portal institucional original, preservando conteúdo e navegação.
+- assets/: logomarcas enviadas. A imagem ETEC/CPS recebida é uma arte única com as duas marcas; por isso foi replicada nos dois caminhos de imagem esperados pelo HTML.
+
+CONFIGURAÇÃO OBRIGATÓRIA:
+1. Configure no Netlify VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY (chave publishable/anon pública; nunca use service_role ou sb_secret no navegador).
+2. Em institucional.html, substitua COLE_AQUI_SUA_CHAVE_PUBLICA_SUPABASE pela mesma chave pública para habilitar a consulta da view projetos_publicos.
+3. A página institucional fica em /institucional.html. A aplicação React continua na raiz (/).
+4. Não publique a chave secreta/service_role.
+
+NOTA:
+O arquivo App.jsx foi preservado como recebido. O portal institucional foi mantido em página separada para evitar substituir ou quebrar as telas autenticadas existentes. Antes de publicar, faça um deploy de teste e valide login, cadastro, avaliações, administração e consulta pública.
