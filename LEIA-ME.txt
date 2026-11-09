@@ -1,0 +1,13 @@
+JDTEC 2026 — SITE ESTÁTICO COM PROJETOS INCORPORADOS
+
+Como testar:
+1. Abra index.html no navegador.
+2. Os 68 projetos já estão incorporados ao HTML; não é necessário buscar projects.json.
+3. Use a busca e os filtros por área, curso e ODS.
+
+Como publicar no Netlify:
+1. Extraia todos os arquivos mantendo a pasta assets.
+2. Arraste o conteúdo desta pasta para o deploy manual do Netlify.
+3. O index.html funciona sem login, React, Supabase ou banco de dados.
+
+O arquivo projects.json permanece como cópia dos dados, mas o site não depende dele.
